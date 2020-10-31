@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.io.*;
 
 public class LOTTO {
-    public static void main(String[] arg) throws IOException {
+    public static <vinstlotto> void main(String[] arg) throws IOException {
         vinstlott[] v=new vinstlott[1000];
         int n=0;    // antal vinstlotter
         Scanner fil=new Scanner(new File("vinster.txt"));
@@ -28,7 +28,7 @@ public class LOTTO {
     }
 
 }
- class vinstlott {
+class vinstlott {
     public int nr;
     public int vinst;
 
@@ -45,8 +45,6 @@ public class LOTTO {
             a[m]= temp;
         }
     }
-
-
 }
 
 
