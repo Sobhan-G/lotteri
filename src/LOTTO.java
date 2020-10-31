@@ -14,6 +14,7 @@ public class LOTTO {
             v[n].nr=fil.nextInt();    // lotto numret
             v[n++].vinst=Integer.parseInt(fil.nextLine());
         }
+
         sortera(v, 0, n - 1);
         PrintWriter utstrom=new PrintWriter(new BufferedWriter(new FileWriter("dragningslista")));
 
